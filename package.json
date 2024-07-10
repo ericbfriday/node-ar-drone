@@ -1,30 +1,45 @@
 {
-  "author": "Felix Geisendörfer <felix@debuggable.com> (http://debuggable.com/)",
-  "name": "ar-drone",
-  "description": "A node.js client for controlling Parrot AR Drone 2.0 quad-copters.",
-  "version": "0.3.3",
-  "homepage": "https://github.com/felixge/node-ar-drone",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/felixge/node-ar-drone.git"
-  },
-  "main": "./index",
-  "scripts": {
-    "pretest": "node_modules/jshint/bin/jshint -c .jshintrc examples/ lib/ test/ index.js",
-    "test": "node test/run.js"
-  },
-  "dependencies": {
-    "buffy": "0.0.4",
-    "simple-debug": "~1.1.1"
-  },
-  "devDependencies": {
-    "utest": "0.0.6",
-    "urun": "0.0.6",
-    "sinon": "1.4.2",
-    "jshint": "2.3.0"
-  },
-  "optionalDependencies": {},
-  "engines": {
-    "node": "*"
-  }
+    "author": "Felix Geisendörfer <felix@debuggable.com> (http://debuggable.com/)",
+    "name": "ar-drone",
+    "description": "A node.js client for controlling Parrot AR Drone 2.0 quad-copters.",
+    "version": "0.3.3",
+    "homepage": "https://github.com/felixge/node-ar-drone",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/felixge/node-ar-drone.git"
+    },
+    "main": "./index",
+    "type": "module",
+    "scripts": {
+        "pretest": "yarn jshint -c .jshintrc examples/lib/test/index.js",
+        "test": "yarn exec node test/run.js"
+    },
+    "dependencies": {
+        "buffy": "0.0.4",
+        "simple-debug": "~1.1.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.6.0",
+        "@nrwl/js": "19.4.2",
+        "@nx/node": "19.4.2",
+        "eslint": "9.x",
+        "globals": "^15.8.0",
+        "jshint": "2.3.0",
+        "nx": "19.4.2",
+        "sinon": "1.4.2",
+        "typescript": "^5.5.3",
+        "typescript-eslint": "^7.16.0",
+        "urun": "0.0.6",
+        "utest": "0.0.6"
+    },
+    "nx": {
+        "plugins": [
+            {
+                "plugin": "@nx/eslint/plugin",
+                "options": {
+                    "targetName": "lint"
+                }
+            }
+        ]
+    }
 }

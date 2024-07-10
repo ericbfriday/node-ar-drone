@@ -2,21 +2,23 @@
 
 The following documents the ```data``` you can expect from the ```navdata``` drone client event
 
-### To activate:
+## To activate
+
 ```js
 var arDrone = require('ar-drone');
 var client = arDrone.createClient();
 client.config('general:navdata_demo', 'FALSE');
 ```
 
-### Register listener for ```data``` event:
+## Register listener for ```data``` event
+
 ```js
 client.on('navdata', (data)=>{
     //Handle drone data processing here...
 });
 ```
 
-### ```data``` Object Structure
+## ```data``` Object Structure
 
 ```json
 {
@@ -29,7 +31,7 @@ client.on('navdata', (data)=>{
 }
 ```
 
-### ```droneState``` Object Structure Example [ Drone config values quite self explanatory ]
+## ```droneState``` Object Structure Example [ Drone config values quite self explanatory ]
 
 ```json
 "droneState": {
@@ -68,7 +70,7 @@ client.on('navdata', (data)=>{
 }
 ```
 
-### ```demo``` Object Structure Example [ Sensor values from drone ]
+## ```demo``` Object Structure Example [ Sensor values from drone ]
 
 ```json
 "demo": {
@@ -149,4 +151,3 @@ client.on('navdata', (data)=>{
 ```
 
 @TODO - Further documentation / explanation on ```navdata``` values
-

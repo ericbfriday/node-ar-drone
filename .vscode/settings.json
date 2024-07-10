@@ -1,0 +1,101 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "debug.javascript.breakOnConditionalError": true,
+    "debug.javascript.defaultRuntimeExecutable": {
+        "pwa-node": "yarn node"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "eslint.codeActionsOnSave.mode": "problems",
+    "eslint.debug": false,
+    "eslint.ignoreUntitled": true,
+    "eslint.lintTask.enable": true,
+    "eslint.run": "onSave",
+    "eslint.useESLintClass": true,
+    "eslint.workingDirectories": [
+        "."
+    ],
+    "files.autoSave": "onFocusChange",
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/**.js": {
+            "when": "$(basename).tsx"
+        }
+    },
+    "javascript.preferences.importModuleSpecifier": "project-relative",
+    "jest.outputConfig": "test-results-based",
+    "jest.jestCommandLine": "yarn test",
+    "jest.runMode": {
+        "type": "on-demand",
+        "revealOutput": "on-run",
+        "deferred": true
+    },
+    "jest.rootPath": ".",
+    "jestrunner.configPath": "jest.config.ts",
+    "search.exclude": {
+        "**/.next": true,
+        "**/.yarn": true,
+        "**/node_modules": true,
+        "**/tmp": true,
+        "**/.swc": true,
+        "dist": true,
+        "tmp/**": true
+    },
+    "typescript.preferences.importModuleSpecifier": "project-relative",
+    "typescript.suggest.completeJSDocs": false,
+    "typescript.suggest.jsdoc.generateReturns": false,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "testing.openTesting": "neverOpen",
+    "eslint.validate": [
+        "json"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#1be556",
+        "activityBar.background": "#1be556",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#9570ef",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#1be556",
+        "statusBar.background": "#15b845",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#1be556",
+        "statusBarItem.remoteBackground": "#15b845",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "tab.activeBorder": "#1be556",
+        "titleBar.activeBackground": "#15b845",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#15b84599",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#15b845"
+}
